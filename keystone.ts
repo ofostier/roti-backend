@@ -52,8 +52,10 @@ export default withAuth(
     db: process.env.DATABASE_URL
       ? { provider: 'postgresql', url: process.env.DATABASE_URL }
       : {
-          provider: 'sqlite',
-          url: databaseURL,
+          // provider: 'sqlite',
+          // url: databaseURL,
+          provider: 'postgresql',
+          url: 'postgresql://postgres:mQHM64%Q@postgredb-1.cn4e9mtddv9n.eu-west-1.rds.amazonaws.com:5432/keystone-e2',
           async onConnect(context) {
             console.log('Connected to the database!');
             if (process.argv.includes('--seed-data')) {
