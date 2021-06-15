@@ -3,3 +3,4 @@ node_modules
 .keystone/prisma
 *.log
 .env
+.vercel
