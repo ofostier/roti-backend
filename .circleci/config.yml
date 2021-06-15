@@ -54,10 +54,10 @@ jobs:
           command: 
             ssh -o StrictHostKeyChecking=no ubuntu@ec2-52-214-180-248.eu-west-1.compute.amazonaws.com \
             "echo Start deploy && \
-            cd ~/roti-backend && \
+            cd roti-backend && \
             git pull && \
-            npm i && \
-            npm run build && \
+            yarn i && \
+            yarn build && \
             pm2 stop build/server && \
             pm2 start build/server && \
             echo Deploy end"
