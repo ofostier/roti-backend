@@ -1,0 +1,65 @@
+datasource postgresql {
+  url      = env("DATABASE_URL")
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "node_modules/.prisma/client"
+}
+
+model User {
+  id                      Int       @id @default(autoincrement())
+  name                    String?
+  firstname               String?
+  email                   String?   @unique
+  password                String?
+  phone                   String?
+  language                String?
+  passwordResetToken      String?
+  passwordResetIssuedAt   DateTime?
+  passwordResetRedeemedAt DateTime?
+  rotis                   Roti[]    @relation("Rotiuser")
+  role                    Role?     @relation("Userrole", fields: [roleId], references: [id])
+  roleId                  Int?      @map("role")
+
+  @@index([roleId])
+}
+
+model Roti {
+  id          Int       @id @default(autoincrement())
+  subject     String?
+  description String?
+  shorturl    String?
+  datecreated DateTime?
+  status      String?
+  tags        String?
+  user        User?     @relation("Rotiuser", fields: [userId], references: [id])
+  userId      Int?      @map("user")
+  votes       Vote[]    @relation("Roti_votes_Vote_rotis", references: [id])
+
+  @@index([userId])
+}
+
+model Vote {
+  id      Int     @id @default(autoincrement())
+  name    String?
+  email   String?
+  note    String?
+  mood    String?
+  comment String?
+  rotis   Roti[]  @relation("Roti_votes_Vote_rotis", references: [id])
+}
+
+model Role {
+  id               Int      @id @default(autoincrement())
+  name             String?
+  canManageRotis   Boolean?
+  canSeeOtherUsers Boolean?
+  canManageUsers   Boolean?
+  canManageRoles   Boolean?
+  canManageCart    Boolean?
+  canManageOrders  Boolean?
+  canManageVotes   Boolean?
+  assignedTo       User[]   @relation("Userrole")
+}
