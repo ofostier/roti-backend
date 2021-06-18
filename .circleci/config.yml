@@ -31,7 +31,7 @@ jobs:
       #- node/install-packages
       # If you are using yarn instead npm, remove the line above and uncomment the two lines below.
       - node/install-packages:
-          app-dir: ~/backend
+          #app-dir: ~/backend
           pkg-manager: yarn 
       - save_cache:
           key: dependency-cache-{{checksum "package-lock.json"}}
