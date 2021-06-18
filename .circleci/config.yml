@@ -87,6 +87,6 @@ workflows:
           app-dir: backend 
           pkg-manager: yarn 
           run-command: test 
-      - deploy:
-          requires:
-            - build-and-test
+#      - deploy:
+#          requires:
+#            - build-and-test
