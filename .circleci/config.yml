@@ -82,9 +82,11 @@ workflows:
     jobs:
       - build-and-test
       - node/test:
-            app-dir: backend 
-            pkg-manager: yarn 
-            run-command: test 
+          requires:
+            - build-and-test
+          app-dir: backend 
+          pkg-manager: yarn 
+          run-command: test 
       - deploy:
           requires:
             - build-and-test
