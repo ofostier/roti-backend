@@ -37,10 +37,9 @@ jobs:
           key: dependency-cache-{{checksum "package-lock.json"}}
           paths:
             - ./node_modules
-  #    - run:
-  #        name: Run tests
-  #        app-dir: backend
-  #        command: yarn test
+      - run:
+          name: Run tests
+          command: cd backend; yarn test
   
   # deploy:
   #   machine:
@@ -81,12 +80,6 @@ workflows:
   build-and-deploy:
     jobs:
       - build-and-test
-      - node/test:
-          requires:
-            - build-and-test
-          app-dir: backend 
-          pkg-manager: yarn 
-          run-command: test 
 #      - deploy:
 #          requires:
 #            - build-and-test
