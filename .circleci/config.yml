@@ -55,7 +55,7 @@ jobs:
       - image: circleci/node:chakracore-8.11.1
     steps:
       - aws-ecr/build-and-push-image:
-            repo: trisula 
+            repo: roti 
 # workflows:
 #   # Below is the definition of your workflow.
 #   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
