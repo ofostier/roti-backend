@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[23],{"1FIX":function(n,i,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/votes/[id]",function(){return _("ZDUi")}])},ZDUi:function(n,i,_){"use strict";_.r(i);var o=_("vPmZ");i.default=Object(o.a)({listKey:"Vote"})}},[["1FIX",0,1,2,3,4,5,8]]]);

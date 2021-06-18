@@ -1,0 +1,15 @@
+FROM node:14-alpine
+RUN mkdir -p /opt/app
+WORKDIR /opt/app
+RUN adduser app
+COPY mutation/ .
+COPY schemas/ .
+COPY lib/ .
+COPY *.ts .
+COPY *.json .
+COPY schema.* .
+RUN yarn  install
+RUN chown -R app:app /opt/app
+USER app
+EXPOSE 3000
+CMD [ "yarn", "run", "pm2" ]

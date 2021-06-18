@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { getInitPage } from '@keystone-next/auth/pages/InitPage';\nconst fieldPaths = ['name', 'email', 'password'];\nexport default getInitPage({\n  listKey: 'User',\n  fieldPaths: ['name', 'email', 'password'],\n  enableWelcome: true\n});","map":null,"metadata":{},"sourceType":"module"}

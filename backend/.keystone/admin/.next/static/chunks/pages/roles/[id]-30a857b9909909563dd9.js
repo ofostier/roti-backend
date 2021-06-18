@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[16],{cM2t:function(n,_,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/roles/[id]",function(){return o("vVVR")}])},vVVR:function(n,_,o){"use strict";o.r(_);var t=o("vPmZ");_.default=Object(t.a)({listKey:"Role"})}},[["cM2t",0,1,2,3,4,5,8]]]);

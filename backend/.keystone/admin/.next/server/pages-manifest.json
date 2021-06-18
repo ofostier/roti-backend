@@ -1,0 +1,19 @@
+{
+  "/_app": "pages/_app.js",
+  "/api/__keystone_api_build": "pages/api/__keystone_api_build.js",
+  "/": "pages/index.html",
+  "/init": "pages/init.html",
+  "/no-access": "pages/no-access.html",
+  "/roles/[id]": "pages/roles/[id].html",
+  "/roles": "pages/roles.html",
+  "/rotis/[id]": "pages/rotis/[id].html",
+  "/rotis": "pages/rotis.html",
+  "/signin": "pages/signin.html",
+  "/users/[id]": "pages/users/[id].html",
+  "/users": "pages/users.html",
+  "/votes/[id]": "pages/votes/[id].html",
+  "/votes": "pages/votes.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

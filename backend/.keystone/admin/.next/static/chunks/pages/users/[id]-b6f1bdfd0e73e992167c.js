@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[21],{"5eZO":function(n,_,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/users/[id]",function(){return e("LOuA")}])},LOuA:function(n,_,e){"use strict";e.r(_);var u=e("vPmZ");_.default=Object(u.a)({listKey:"User"})}},[["5eZO",0,1,2,3,4,5,8]]]);

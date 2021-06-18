@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { getItemPage } from '@keystone-next/keystone/___internal-do-not-use-will-break-in-patch/admin-ui/pages/ItemPage';\nexport default getItemPage({\n  listKey: 'Roti'\n});","map":null,"metadata":{},"sourceType":"module"}

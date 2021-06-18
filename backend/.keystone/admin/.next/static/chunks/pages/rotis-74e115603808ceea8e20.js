@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[17],{DqFE:function(n,_,i){"use strict";i.r(_);var o=i("3Ywz");_.default=Object(o.a)({listKey:"Roti"})},cbUu:function(n,_,i){(window.__NEXT_P=window.__NEXT_P||[]).push(["/rotis",function(){return i("DqFE")}])}},[["cbUu",0,1,2,3,4,5,6,7]]]);

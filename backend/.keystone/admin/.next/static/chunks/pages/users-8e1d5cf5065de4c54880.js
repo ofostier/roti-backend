@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[20],{ERR6:function(n,_,i){(window.__NEXT_P=window.__NEXT_P||[]).push(["/users",function(){return i("W9i/")}])},"W9i/":function(n,_,i){"use strict";i.r(_);var w=i("3Ywz");_.default=Object(w.a)({listKey:"User"})}},[["ERR6",0,1,2,3,4,5,6,7]]]);

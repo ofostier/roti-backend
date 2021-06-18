@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[22],{"8U9R":function(n,_,o){"use strict";o.r(_);var t=o("3Ywz");_.default=Object(t.a)({listKey:"Vote"})},rksb:function(n,_,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/votes",function(){return o("8U9R")}])}},[["rksb",0,1,2,3,4,5,6,7]]]);

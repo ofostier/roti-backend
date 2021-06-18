@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[18],{Whyi:function(i,n,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/rotis/[id]",function(){return _("yUPI")}])},yUPI:function(i,n,_){"use strict";_.r(n);var o=_("vPmZ");n.default=Object(o.a)({listKey:"Roti"})}},[["Whyi",0,1,2,3,4,5,8]]]);
